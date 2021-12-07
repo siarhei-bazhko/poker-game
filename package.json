@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "typings": "types/card.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "tsc --project tsconfig.json && node dist/index.js"
   },
   "repository": {
     "type": "git",

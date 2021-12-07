@@ -6,7 +6,7 @@ interface IDeck {
     id : number
     cards: Card[]
     shuffle() : void
-    dealOneCard() : Card | Error
+    dealOneCard() : Card
 }
 
 class Deck implements IDeck {
@@ -36,9 +36,9 @@ class Deck implements IDeck {
         return this._cards;
     }
 
-    dealOneCard(): Card | Error {
+    dealOneCard(): Card {
         if(!this._cards.length) {
-            return new Error("Deck is empty")
+            throw new Error("Deck is empty")
         }
         let topCard = this._cards.pop()
         this.logger.info(`remove top card: ${topCard}`)

@@ -43,8 +43,8 @@ describe("test deck core functionality",() => {
     it("dealOneCard should return client-error on empty deck", () => {
         let len = deck.cards.length
         for(let i = 0; i < len; i++) {
-            expect(deck.dealOneCard() instanceof Error).toBe(false)
+            expect(deck.dealOneCard.bind(deck)).not.toThrow(new Error("Deck is empty"))
         }
-        expect(deck.dealOneCard() instanceof Error).toBe(true)
+        expect(deck.dealOneCard.bind(deck)).toThrow(new Error("Deck is empty"))
     })
 })

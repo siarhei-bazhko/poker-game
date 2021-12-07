@@ -19,7 +19,12 @@ class Runner {
         for(let i = 0; i < len; i++) {
             console.log(deck.dealOneCard())
         }
-        console.log(deck.dealOneCard())
+
+        try {
+            deck.dealOneCard()
+        } catch (err) {
+            console.log(`catch user-error ${err}`)
+        }
         console.log(deck.cards.length)
     }
 }
