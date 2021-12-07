@@ -2,6 +2,9 @@
 LogMeIn assignment. Repo contains backbone architecture for a poker game
 
 ## Start
+**Prerequisites** :
+node `v17.0.1` (use `nvm` to switch between proper versions), tsc `4.5.2`
+
 In order to start the project:
  1. Clone the repo: `git clone https://github.com/siarhei-bazhko/poker-game.git`
  2. To execute the client code `npm install && npm start`
