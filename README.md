@@ -1,6 +1,5 @@
-# poker-game
+# Pocker game
 LogMeIn assignment. Repo contains backbone architecture for a poker game
-
 
 ## Start
 In order to start the project:
@@ -48,3 +47,5 @@ and more implementation-specific features (such as communication and persistence
 4. Persistence and logging are included for the demonstration purposes only
    - Thus, read/write to the file are done synchronously. This might not be a problem for a multithreaded client as long as it can execute presentation layer separately from the rest.
  
+5. Types and interfaces are located in the same file
+   - Once project will be extended they could be separated (e.g., `/types` directory)
