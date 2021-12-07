@@ -1,0 +1,27 @@
+{
+  "name": "poker-game",
+  "version": "0.1.0",
+  "description": "Poker game",
+  "main": "dist/index.js",
+  "typings": "types/card.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siarhei-bazhko/poker-game.git"
+  },
+  "author": "Siarhei Bazhko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siarhei-bazhko/poker-game/issues"
+  },
+  "homepage": "https://github.com/siarhei-bazhko/poker-game#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.1.0",
+    "typescript": "^4.5.2"
+  }
+}

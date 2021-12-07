@@ -1,0 +1,4 @@
+node_modules
+.idea
+
+./deck_state.json
